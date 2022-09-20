@@ -3,7 +3,7 @@
     "name" : "dacha (simple homepage)",
     "description" : "sets new tab page to a simple SPWA.",
     "version": "0.1.0",
-    "permissions": ["storage"],
+    "permissions": ["storage", "activeTab", "scripting"],
     "action" : {},
     "chrome_url_overrides": {
         "newtab":"dacha.html"

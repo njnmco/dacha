@@ -30,4 +30,9 @@
 // POSSIBILITY OF SUCH DAMAGE.
 
 chrome.action.onClicked.addListener( async function(tab) {
+    let injection = await chrome.scripting.executeScript({
+        function: () => document.body.parentElement.innerHTML,
+        target:{tabId:tab.id}
+    })
+    chrome.storage.local.set({"html":injection[0].result});
 })
