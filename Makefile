@@ -1,10 +1,10 @@
 
-zasnut.zip : zasnut.js manifest.json
+dacha.zip : dacha.js manifest.json
 	zip $@ $?
 
 .PHONY: tag
 
-zasnut.zip : tag
+dacha.zip : tag
 
 tag : ##
 	git diff --exit-code
