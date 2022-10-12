@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name" : "dacha (simple homepage)",
     "description" : "sets new tab page to a static page.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "permissions": ["storage", "activeTab", "scripting"],
     "action" : {},
     "chrome_url_overrides": {
