@@ -1,5 +1,5 @@
 
-dacha.zip : dacha.js manifest.json
+dacha.zip : dacha.js dacha.html manifest.json background.js
 	zip $@ $?
 
 .PHONY: tag
